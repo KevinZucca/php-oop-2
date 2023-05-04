@@ -1,0 +1,42 @@
+body {
+    background-image: url("img/wallpaper.jpeg");
+    background-size: 100%;
+}
+
+
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+
+    color: white;
+}
+
+
+.my-container {
+    display: flex;
+    gap: 50px;
+
+    text-align: center;
+
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+    .card{
+        background-color: #ffffff9c;
+        transition: scale 0.2s ease-in;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.537);
+
+        &:hover {
+            scale: 1.1;
+            cursor: pointer;
+        }
+    }
+
+    .my-img {
+        margin: 10px auto;
+        width: 90%;
+        height: 200px;
+    }
+}

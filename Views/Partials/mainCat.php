@@ -7,7 +7,8 @@
         <div class="card" style="width: 18rem;">
             <img src="<?php echo $singleCatItem->picture ?>" class="card-img-top my-img" alt="cover">
             <div class="card-body">
-                <h5><?php echo $singleCatItem->category ?></h5>
+                <h5 class="cat-category"><?php echo $singleCatItem->category ?></h5>
+                <i class="fa-solid fa-cat"></i>
                 <h4><?php echo $singleCatItem->specificName ?></h4>
                 <p>Product: <?php echo $singleCatItem->type ?></p>
                 <strong><?php echo $singleCatItem->price ?></strong>

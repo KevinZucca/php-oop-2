@@ -13,5 +13,13 @@ class CatProduct
         $this->type = $type;
         $this->price = $price;
         $this->picture = $picture;
+
+        $this->setPrice();
+    }
+
+
+    public function setPrice()
+    {
+        return $this->price .= "€";
     }
 }

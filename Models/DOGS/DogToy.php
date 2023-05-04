@@ -13,5 +13,17 @@ class DogToy extends DogProduct
         $this->specificName = $specificName;
         $this->storeQuantity = $storeQuantity;
         $this->material = $material;
+
+        $this->setQuantity();
+    }
+
+
+    public function setQuantity()
+    {
+        if ($this->storeQuantity == 1) {
+            return $this->storeQuantity .= " piece";
+        } else {
+            return $this->storeQuantity .= " pieces";
+        }
     }
 }

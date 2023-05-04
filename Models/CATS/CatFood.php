@@ -10,5 +10,16 @@ class CatFood extends CatProduct
         parent::__construct($category, $type, $price, $picture);
         $this->specificName = $specificName;
         $this->storeQuantity = $storeQuantity;
+
+        $this->setQuantity();
+    }
+
+    public function setQuantity()
+    {
+        if ($this->storeQuantity == 1) {
+            return $this->storeQuantity .= " piece";
+        } else {
+            return $this->storeQuantity .= " pieces";
+        }
     }
 }

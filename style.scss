@@ -1,21 +1,13 @@
 body {
     background-image: url("img/wallpaper.jpeg");
-    background-size: 100%;
-}
-
-
-
-.title {
-    text-align: center;
-    margin-top: 20px;
-
-    color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 
 .my-container {
     display: flex;
-    gap: 50px;
+    flex-flow: column;
 
     text-align: center;
 
@@ -25,10 +17,22 @@ body {
 
     background-color: #ffffff6c;
 
-    
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+
+        color: rgba(0, 0, 0, 0.783);
+    }
+
+    .card-container{
+        display: flex;
+        flex-flow: row;
+        gap: 50px;
+    }
 
 
     .card{
+        width:calc(100% / 4);
         background-color: #ffffff9c;
         transition: scale 0.2s ease-in;
         box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.537);
@@ -37,6 +41,12 @@ body {
             scale: 1.1;
             cursor: pointer;
         }
+
+        .original-price {
+            color: red;
+            text-decoration: line-through;
+        }
+    }
     }
 
     .my-img {
@@ -52,4 +62,6 @@ body {
     .dog-category {
         color: rgba(87, 87, 214, 0.678);
     }
-}
+
+
+ 

@@ -1,11 +1,12 @@
 <?php
 
-class DogProduct
+class Product
 {
     public $category;
     public $type;
     public $price;
     public $picture;
+
 
     public function __construct(string $category, string $type, string $price, string $picture,)
     {

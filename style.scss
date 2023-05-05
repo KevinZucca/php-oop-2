@@ -42,6 +42,15 @@ body {
             cursor: pointer;
         }
 
+        &.not-available {
+            background-color: #ffffff40;
+
+            &:hover {
+                scale: 1;
+                cursor: default;
+            }
+        }
+
         .original-price {
             color: red;
             text-decoration: line-through;
